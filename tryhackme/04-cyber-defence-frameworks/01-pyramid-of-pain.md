@@ -1,4 +1,4 @@
-# Title
+# Pyramid of pain
 
 ## What I learned
 
