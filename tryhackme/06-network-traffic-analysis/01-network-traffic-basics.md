@@ -1,30 +1,58 @@
-# Network Traffic Basiscs
+# Network Traffic Basics
 
 ## What I learned
 
-- Network trafic should be analysed to monitor network performance, check for abnormalities in the network and inspect suspicious communcation internally and externally
-- On each layer of the TCP/IP model can be found important infromation about the network:
-  - application: the application header infromation and the application data ( the payload) and it's different based on the protocol used
-  - transport : transport header ( most cases TCP or UDP)
-  - internet: source and destination IP and TTL
-  - link: more addressing information
-- There are two network traffic source: intermeediary annd endpoint
-- Network traffic flow: north-south traffic : LAN to WAN and vice verse and East-West: within the LAN
+- Network traffic should be analyzed to monitor performance, detect abnormalities, and investigate suspicious internal or external communication.
+- Each layer of the TCP/IP model contains important network information:
+  - Application layer  
+    → application headers + payload (data), varies depending on protocol
+
+  - Transport layer  
+    → transport headers (usually TCP or UDP)
+
+  - Internet layer  
+    → source IP, destination IP, and TTL
+
+  - Link layer  
+    → physical addressing information (MAC addresses, etc.)
+
+- There are two main sources of network traffic:
+  - intermediary devices (routers, switches)
+  - endpoint devices (laptops, servers, etc.)
+
+- Network traffic flow types:
+  - North-South traffic → between LAN and WAN (internal ↔ external)
+  - East-West traffic → within the same LAN (internal communication)
+
+---
 
 ## Key concepts
 
-- NTA (Network Traffic Analysis): a process that encompasses capturing, inspecting, and analyzing data as it flows in a network.
-- Network tap: a physical device you place inline in your network which creates a copy of all the network traffic
-- Port mirroring: software approach to copying packets from one port on an intermediary device to another that is attached to
+- Network Traffic Analysis (NTA)  
+  → process of capturing, inspecting, and analyzing network data as it flows through a network
+
+- Network tap  
+  → physical device placed inline to copy network traffic for analysis
+
+- Port mirroring  
+  → software-based method to copy traffic from one network port to another for monitoring
+
+---
 
 ## Why it matters in SOC
 
-- Because it helps detect suspicious or malicious activity, reconstruct attacks during incident response and verify and validate alerts.
+- Helps detect suspicious or malicious activity in the network.
+- Supports incident response by allowing analysts to reconstruct attacks.
+- Helps validate and investigate alerts from security tools.
 
-## Commands / tools used
+---
 
-- Analyzed network traffic and placed the tap on the correct position
+## Tools / activities used
+
+- Analyzed network traffic and identified correct placement of monitoring tools (tap / mirroring)
+
+---
 
 ## Personal notes
 
--
+- Understanding network traffic flow makes it much easier to detect unusual behavior in a SOC environment.
