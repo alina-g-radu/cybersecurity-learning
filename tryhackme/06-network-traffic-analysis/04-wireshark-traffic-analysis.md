@@ -4,6 +4,7 @@
 
 - Network scanning and protocol analysis can be identified directly from packet behavior in Wireshark.
 - Different scan types produce different packet patterns, which can be used for detection and investigation.
+- FTP traffic is not encrypted, which makes usernames, passwords, and transferred files visible to attackers monitoring the network.
 
 ---
 
@@ -123,6 +124,15 @@ Suspicious indicator:
 - Technique used to hide data inside allowed protocols
 - Also known as port forwarding in some contexts
 - Can be used for legitimate or malicious purposes
+
+### FTP (File Transfer Protocol) Analysis
+
+- Using FPT in unsecured environments could create security issues like:
+  - MITM attacks
+  - Credential stealing and anauthorised access
+  - Phishing
+  - Malware planting
+  - Data exfiltration
 
 ---
 
