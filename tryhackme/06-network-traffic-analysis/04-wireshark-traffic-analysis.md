@@ -125,6 +125,8 @@ Suspicious indicator:
 - Also known as port forwarding in some contexts
 - Can be used for legitimate or malicious purposes
 
+---
+
 ### FTP (File Transfer Protocol) Analysis
 
 - Using FPT in unsecured environments could create security issues like:
